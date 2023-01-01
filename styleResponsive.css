@@ -1,0 +1,126 @@
+@media (max-width:500px) {
+    #main{
+        position: relative;
+        background-color: #2B322A;
+    }
+    .cursor{
+        display: none;
+    }
+    #page1{
+        height: 100vh;
+    }
+    #page1 h1{
+        top: 8vh;
+        font-size: 10vw;
+    }
+    #page1 #img1{
+        width:80vw ;
+        height: 60vh;
+        position: absolute;
+        top: 100vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #page1 #img1 h2{
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    #page3 #text{
+        width: 80%;
+        opacity: 1;
+        position: absolute;
+        z-index: 99999;
+        top: 70vh;
+    }
+    
+    #page3 #text h1{
+        font-size: 5vw;
+       
+    }
+    #page3{
+        height: 50vh;
+    }
+    #page3 #text h2{
+        width: 80%;
+        font-size: 5vw;
+        transform: translate(-50%);
+        text-align: center;
+    }
+    #page4 , #page2{
+        display: none;
+    }
+    #page5 #border-box{
+        height:40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #page5 #border-box #vdo{
+        width: 100%;
+        height: 100%;
+    }
+    #page6 #text h1{
+        font-size: 8vw;
+        line-height: 6vh;
+    }
+    #page6 #text h4{
+        font-size: 3vw;
+        line-height: 2vh;
+    }
+    #page7 #detail{
+        width: 90vw;
+        font-size: 3.5vw;
+        text-align: start;
+    }
+    #page8 #center{
+        width: 95%;
+    }
+    #page8 #center #img{
+        width: 90vw;
+        height: 60vh;
+        
+    }
+    #page8 #center #text h3{
+        font-size: 2.1vw;
+        line-height: 1.5vh;
+    }
+    #page9 #awwward{
+        width: 90vw;
+        text-align: start;
+    }
+    #page9 #awwward h1{
+        font-size: 7vw;
+        line-height: 6vh;
+    }
+    #magic-box {
+        width: 90vw;
+        height: 40vh;
+    }
+    #magic-box .box{
+        font-size: 0vw;
+    }
+    #magic-box .box:hover{
+        font-size: 2vw;
+    }
+    #page12 #love{
+        width: 90vw;
+        text-align: start;
+    }
+    #page12 #love h1{
+        font-size: 7vw;
+        line-height: 6vh;
+    }
+    #page12 #request{
+        height: 15vh;
+    }
+    #page13 #end h1{
+        font-size: 6vw;
+    }
+    #page13 #bottom{
+        width: 90vw;
+        font-size: 2vw;
+    }
+}
