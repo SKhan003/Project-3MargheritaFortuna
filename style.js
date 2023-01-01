@@ -13,6 +13,7 @@ function show() {
     getBoundingClientRect() {
       return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
     },
+    
     pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
   });
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
@@ -57,7 +58,7 @@ function curser() {
 
 }
 
-function TextAni() {
+function AllAni() {
   var tmlne = gsap.timeline();
   tmlne
     .from("#page3 #text ", {
@@ -91,7 +92,6 @@ function TextAni() {
 
     })
     .from("#page8 #center #img", {
-
       scrollTrigger: {
         trigger: "#page8 #center #img",
         Scroller: "#main",
@@ -146,9 +146,33 @@ function TextAni() {
 
 }
 
+function locomotiveInitilze(){
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+}
 
+
+function cardshow(){
+  document.querySelectorAll(".cnt")
+  .forEach(function(cnt){
+    var showimg; 
+    cnt.addEventListener("mousemove",function(dets){
+      document.querySelector("#crsr").children[dets.target.dataset.index].style.opacity = 1;
+        showimg = dets.target;
+      document.querySelector("#crsr").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`;
+    })
+    cnt.addEventListener("mouseleave",function(dets){
+      document.querySelector("#crsr").children[showimg.dataset.index].style.opacity = 0;
+    })
+  })
+}
+
+cardshow();
 show();
 FirstPageAni();
 curser();
-TextAni();
+AllAni();
+locomotiveInitilze();
 

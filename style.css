@@ -45,7 +45,7 @@ body {
 #overlay {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(98, 44, 51);
+    background-color: #5b0f21;
     position: absolute;
     z-index: 9;
 }
@@ -64,11 +64,12 @@ body {
     position: absolute;
     color: #fff;
     margin-top: 2vw;
-    margin-left: 2vw;
+    margin-left: 2.7vw;
     font-family: Migra Extralight;
     font-style: italic;
     font-size: 2.2vw;
     font-weight: 300;
+    z-index: 9999;
 }
 
 #page1 #img1 h2 span {
@@ -76,8 +77,8 @@ body {
 }
 
 #page1 #img1 img {
-    width: 100%;
-    height: 100%;
+    width: 105%;
+    height: 105%;
     object-fit: cover;
     object-position: center;
 }
@@ -262,7 +263,78 @@ body {
     height: 100vh;
     position: relative;
 }
+#crsr{
+    position: relative;
+    width: 10vw;
+    height: 20vh;
+    z-index: 99999999;
+}
+.crow{
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
 
+.ccpsule{
+    color: #fff;
+    font-family: "migra";
+    width: 7vw;
+    height: 5vh;
+    border-radius: 100px;
+    background-color: #5b0f21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#crsr>div{
+    opacity: 0;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+}
+#element{
+    position:relative;
+    width: 100%;
+    height: 15vh;
+    overflow: hidden;
+}
+#element img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: an 4s linear infinite;
+}
+#element img:nth-child(2){
+    animation-delay: 1s;
+}
+#element img:nth-child(3){
+    animation-delay: 2s;
+}#element img:nth-child(4){
+    animation-delay: 3s;
+}
+@keyframes an {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    26%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 #page8 #center {
     width: 60vw;
     height: 100vh;
@@ -270,14 +342,12 @@ body {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    cursor: none;
 }
 
 #page8 #center #img {
     width: 50vw;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #page8 #center #img img {
@@ -403,14 +473,13 @@ body {
     right: -5%;
     border-radius: 20px;
     transform: translate(-50%, -50%);
-    background-color: red;
     overflow: hidden;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 #page11 #img3 img {
-    width: 100%;
-    height: 100%;
+    width: 105%;
+    height: 105%;
     object-fit: cover;
     object-position: center;
 }
@@ -566,5 +635,8 @@ h1 {
     transition: all 0.3s ease;
 }
 
-/* <-- Responsive -->*/
+/* <-- locomotive-thumb -->*/
+.c-scrollbar_thumb{
+    background-color: #830707;
+}
 
