@@ -62,7 +62,7 @@ function AllAni() {
   var tmlne = gsap.timeline();
   tmlne
     .from("#page3 #text ", {
-      opacity: 0,
+     opacity: 0,
       scrollTrigger: {
         trigger: "#page3 #text ",
         scroller: "#main",
@@ -81,7 +81,7 @@ function AllAni() {
 
     })
     .from("#page7 #detail", {
-      opacity: 0,
+     opacity: 0,
       x: "-50px",
       scrollTrigger: {
         trigger: "#page7 #detail",
@@ -99,7 +99,7 @@ function AllAni() {
       }
     })
     .from("#page8 #text", {
-      opacity: 0,
+     opacity: 0,
 
       scrollTrigger: {
         trigger: "#page8 #text",
@@ -121,7 +121,7 @@ function AllAni() {
 
     })
     .from("#page11 #img3", {
-      opacity: 0,
+     opacity: 0,
       x: "100px",
       scrollTrigger: {
         trigger: "#page11 #img3",
@@ -133,7 +133,7 @@ function AllAni() {
 
     })
     .from("#page12 #love>h1", {
-      opacity: 0,
+     opacity: 0,
       x: "-50px",
       scrollTrigger: {
         trigger: "#page12 #love>h1",

@@ -53,7 +53,7 @@ body {
 #page1 #img1 {
     position: absolute;
     width: 40vw;
-    height: 110vh;
+    min-height: 110vh;
     left: 30%;
     top: 100%;
     border-radius: 30px;
@@ -98,11 +98,11 @@ body {
 #page3 #text {
     width: 50vw;
     height: 80vh;
-    position: absolute;
+    position: relative;
     top: 70%;
     left: 50%;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
 #page3 #text h1 {
@@ -125,11 +125,13 @@ body {
 }
 
 #page3 #text h2 {
+    position:absolute ;
     text-align: center;
+    font-size: 2.5vw;
     font-family: "Migra";
-    margin: 40px 140px;
     color: palevioletred;
     font-style: italic;
+    margin-left: 7vw;
 }
 
 #page4 {
@@ -190,6 +192,7 @@ body {
     color: palevioletred;
     font-family: "Migra";
     margin-bottom: 20px;
+    font-size: 2.5vw;
 }
 
 #page6 #text #a {
@@ -198,8 +201,8 @@ body {
 
 #page6 #text h1 {
     text-align: center;
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 7vw;
+    line-height: 8vw;
     font-family: "Migra";
     color: #fff;
     font-weight: 400;
@@ -217,7 +220,7 @@ body {
     text-align: center;
     color: #fff;
     margin-top: 50px;
-    font-size: 18px;
+    font-size: 1.5vw;
     font-family: gilroy;
     font-weight: 500;
 }
@@ -235,13 +238,14 @@ body {
     left: 10px;
     font-family: "migra";
     color: #fff;
-    font-size: 20px;
+    /* font-size: 20px; */
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 #detail h1 {
     font-weight: 400;
-    line-height: 55px;
+    line-height: 4.5vw;
+    font-size: 3vw;
 }
 
 #detail a {
@@ -337,9 +341,10 @@ body {
 }
 #page8 #center {
     width: 60vw;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     left: 50%;
+    align-items: center;
     transform: translateX(-50%);
     display: flex;
     cursor: none;
@@ -367,11 +372,11 @@ body {
 }
 
 #page8 #center #text h3 {
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 400;
-    margin-top: 33px;
-    margin-bottom: 30px;
-    line-height: 22px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    line-height: 2vw;
 }
 
 #page8 #center #text a {
@@ -397,10 +402,10 @@ body {
 
 #awwward h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 4vw;
     font-family: "migra";
     font-weight: 400;
-    line-height: 60px;
+    line-height: 5vw;
 }
 
 #awwward a {
@@ -498,8 +503,8 @@ body {
     top: 10%;
     color: #fff;
     font-family: "migra";
-    font-size: 20px;
-    line-height: 48px;
+    font-size: 1.5vw;
+    line-height: 3.5vw;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
@@ -557,7 +562,7 @@ body {
 
 #end {
     width: 95vw;
-    height: 90vh;
+    min-height: 90vh;
     border-radius: 30px;
     border: solid 1px white;
     position: absolute;
@@ -569,7 +574,7 @@ body {
 
 #end h5 {
     text-align: center;
-    font-size: 15px;
+    font-size: 1.2vw;
     font-family: gilroy;
     font-weight: 400;
     margin-top: 80px;
@@ -581,7 +586,7 @@ body {
     margin-top: 100px;
     font-family: "migra";
     font-weight: 400;
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 #bottom {
@@ -598,15 +603,16 @@ body {
 
 #bottom h4 {
     font-weight: 400;
+    font-size: 1.2vw;
 }
 
 #contact {
     display: flex;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 #contact h6 {
-    margin-right: 30px;
+    margin-right: 2vw;
     font-weight: 400;
 }
 
@@ -639,4 +645,5 @@ h1 {
 .c-scrollbar_thumb{
     background-color: #830707;
 }
+
 

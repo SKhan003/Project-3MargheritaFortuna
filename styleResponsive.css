@@ -33,7 +33,7 @@
         opacity: 1;
         position: absolute;
         z-index: 99999;
-        top: 70vh;
+        top: 40vh;
     }
     
     #page3 #text h1{
@@ -46,7 +46,6 @@
     #page3 #text h2{
         width: 80%;
         font-size: 5vw;
-        transform: translate(-50%);
         text-align: center;
     }
     #page4 , #page2{
